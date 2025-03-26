@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <center>   <h1>addition</h1> </center>
+</head>
+<body>
+    <center>
+    <form>
+<input  type="text" placeholder="num1" id="num1" ><br>
+<input type="text" placeholder="num1" id="num2" >
+
+<br>
+
+<input type="button" id="add" onClick="addfunction()" value="addition">
+</form>
+<input  onClick="subfunction()" type="button" value="subtract">
+<input  onClick="divfunction()" type="button" value="divide">
+<input  onClick="mulfunction()" type="button" value="multiply">
+<p>the result is:
+<span id="result"></span>
+</p>
+</center>
+
+<center> 
+YOUR NAME:<input type="text" placeholder="name" id="name1"><br>
+<input type="button" onclick="namefunction()" value="submit" >
+<p>message:
+    <span id="name3"></span>
+</p>
+</center> 
+<script type="text/javascript">
+
+function addfunction(){ 
+    no1=document.getElementById("num1").value
+
+ no2=document.getElementById("num2").value
+
+document.getElementById("result").innerHTML=Number(no1)+Number(no2)
+}
+
+function subfunction(){ 
+   let no1=document.getElementById("num1").value
+
+ let no2=document.getElementById("num2").value
+
+document.getElementById("result").innerHTML=Number(no1)-Number(no2)
+}
+
+function divfunction(){ 
+   let no1=document.getElementById("num1").value
+
+ let no2=document.getElementById("num2").value
+
+document.getElementById("result").innerHTML=Number(no1)/Number(no2)
+}
+
+function mulfunction(){ 
+    let no1=document.getElementById("num1").value
+
+    let no2=document.getElementById("num2").value
+
+document.getElementById("result").innerHTML=Number(no1)*Number(no2)
+}
+
+function namefunction(){
+
+name=document.getElementById("name1").value
+
+document.getElementById("name3").innerHTML="welcome "+name
+
+}
+
+
+</script>
+    
+</body>
+</html>
